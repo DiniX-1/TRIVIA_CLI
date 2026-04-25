@@ -13,10 +13,10 @@ function askQuestion(questionObj, index) {
   const userAnswer = readlineSync.question("Your answer (A/B/C/D): ").trim().toUpperCase();
 
   if (userAnswer === questionObj.answer) {
-    console.log("✅ Correct!");
+    console.log("Correct!");
     return true;
   } else {
-    console.log(`❌ Wrong! The correct answer was ${questionObj.answer}.`);
+    console.log(`Wrong! The correct answer was ${questionObj.answer}.`);
     return false;
   }
 }
@@ -49,7 +49,7 @@ function showResults({ score, total, timeTaken }) {
   const percentage = Math.round((score / total) * 100);
 
   console.log("\n========================================");
-  console.log("           🏆 QUIZ COMPLETE! 🏆");
+  console.log("           QUIZ COMPLETE!");
   console.log("========================================");
   console.log(`  Score     : ${score} / ${total}`);
   console.log(`  Accuracy  : ${percentage}%`);
@@ -57,13 +57,13 @@ function showResults({ score, total, timeTaken }) {
   console.log("----------------------------------------");
 
   if (percentage === 100) {
-    console.log("  🌟 Perfect score! Outstanding!");
+    console.log("  Perfect score! Outstanding!");
   } else if (percentage >= 70) {
-    console.log("  👍 Great job! You passed!");
+    console.log("  Great job! You passed!");
   } else if (percentage >= 50) {
-    console.log("  📚 Not bad, but keep studying!");
+    console.log("  Not bad, but keep studying!");
   } else {
-    console.log("  💪 Keep practicing — you'll get there!");
+    console.log("  Keep practicing -- you'll get there!");
   }
 
   console.log("========================================\n");

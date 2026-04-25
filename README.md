@@ -1,4 +1,4 @@
-# Trivia CLI 🎯
+# Trivia CLI
 
 A Command-Line Interface trivia game built with JavaScript (Node.js).
 

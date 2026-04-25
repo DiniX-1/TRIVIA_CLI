@@ -7,7 +7,7 @@ const { runQuiz, showResults } = require("./game");
  */
 function showWelcome() {
   console.log("\n========================================");
-  console.log("       🎯 Welcome to Trivia CLI! 🎯");
+  console.log("         Welcome to Trivia CLI!");
   console.log("========================================");
   console.log("  Rules:");
   console.log("  - Answer each question with A, B, C, or D");
@@ -46,7 +46,7 @@ async function main() {
 
   const start = readlineSync.keyInYNStrict("Ready to start the quiz?");
   if (!start) {
-    console.log("\nMaybe next time! Goodbye. 👋\n");
+    console.log("\nMaybe next time! Goodbye.\n");
     process.exit(0);
   }
 
@@ -59,7 +59,7 @@ async function main() {
   if (playAgain) {
     main();
   } else {
-    console.log("\nThanks for playing! Goodbye. 👋\n");
+    console.log("\nThanks for playing! Goodbye.\n");
   }
 }
 
